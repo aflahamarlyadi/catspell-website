@@ -3,62 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catspell</title>
+    <title>Catspell Cat Resort</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
 </head>
 <body>
     <!-- ============================================ -->
     <!--                 Navigation                   -->
     <!-- ============================================ -->
 
-    <header id="cs-navigation">
-        <div class="cs-container">
+    <header id="navigation">
+        <div class="container">
             <!--Nav Logo-->
-            <a href="" class="cs-logo" aria-label="back to home">
-                <img src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Flogo-black.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            <a href="" class="logo" aria-label="back to home">
+                <img src="images/logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
             </a>
             <!--Navigation List-->
-            <nav class="cs-nav" role="navigation">
+            <nav class="nav" role="navigation">
                 <!--Mobile Nav Toggle-->
-                <button class="cs-toggle" aria-label="mobile menu toggle">
-                    <div class="cs-box" aria-hidden="true">
-                        <span class="cs-line cs-line1" aria-hidden="true"></span>
-                        <span class="cs-line cs-line2" aria-hidden="true"></span>
-                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                <button class="toggle" aria-label="mobile menu toggle">
+                    <div class="box" aria-hidden="true">
+                        <span class="line line1" aria-hidden="true"></span>
+                        <span class="line line2" aria-hidden="true"></span>
+                        <span class="line line3" aria-hidden="true"></span>
                     </div>
                 </button>
-                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
-                <div class="cs-ul-wrapper">
-                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link cs-active">
+                <!-- We need a wrapper div so we can set a fixed height on the ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="ul-wrapper">
+                    <ul id="expanded" class="ul" aria-expanded="false">
+                        <li class="li">
+                            <a href="" class="li-link active">
                                 Home
                             </a>
                         </li>
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link">
-                                About
+                        <li class="li">
+                            <a href="#pricing" class="li-link">
+                                Our Prices
                             </a>
                         </li>
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link">
-                                Services
+                        <li class="li">
+                            <a href="" class="li-link">
+                                Your Checklist
                             </a>
                         </li>
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link">
-                                About Us
+                        <li class="li">
+                            <a href="" class="li-link">
+                                Facts on Cats
                             </a>
                         </li>
-                        <li class="cs-li">
-                            <a href="" class="cs-li-link">
-                                FAQ
+                        <li class="li">
+                            <a href="" class="li-link">
+                                The Cat Tails
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <a href="" class="cs-button-solid cs-nav-button">Contact Us</a>
+            <a href="#contact" class="button-solid nav-button">Contact Us</a>
         </div>
     </header>
 
@@ -66,20 +71,18 @@
     <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="hero-219">
-        <div class="cs-container">
-            <h1 class="cs-title">Construction & Maintenance Experts in New York City</h1>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. At quis donec eget tellus turpis imperdiet aenean libero. 
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome, do you need a unique place to board your Cat?</h1>
+            <p>
+                At Catspell, our mission is to reassure clients that their Cats will be kept in a healthy, stimulating, safe and sound environment by experienced carers who will look after their every need and whim.
             </p>
-            <a href="" class="cs-button-solid">Request Appointment</a>
+            <a href="#contact" class="button-solid">Book Now</a>
         </div>
 
         <!-- Background Image -->
-        <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen-m.jpg">
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg">
-            <img decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg" alt="kitchen" width="2250" height="1500" aria-hidden="true">
+        <picture class="background">
+            <img decoding="async" src="images\hero.jpg" alt="sleeping leopard kitten" width="2250" height="1500" aria-hidden="true">
         </picture>
     </section>
 
@@ -87,50 +90,31 @@
     <!--                  Gallery                     -->
     <!-- ============================================ -->
 
-    <section id="gallery-1716">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Gallery</span>
-                <h2 class="cs-title">Some of Our Memories</h2>
-                <!--If you remove the cs-text, the rectangle shape will disappear.  If you need to remove it, transfer the :before and .cs-text:last-of-type styles to the cs-title on mobile and desktop-->
-                <p class="cs-text">
-                    Aqestic recusandae laudantium optio amet a quisquam saepe aliquid, voluptate praesentium dicta fuga dolor error.
+    <section id="gallery">
+        <div class="container">
+            <div class="content">
+                <h2>The Gallery</h2>
+                <!--If you remove the text, the rectangle shape will disappear.  If you need to remove it, transfer the :before and .text:last-of-type styles to the title on mobile and desktop-->
+                <p>
+                    Our own high expectations at Catspell instills client's trust that the welfare of their Cats are safeguarded in our unique establishment.
                 </p>
-                <a href="" class="cs-button-solid">View All</a>
+                <a href="" class="button-solid gallery-images">View All</a>
             </div>
-            <div class="cs-gallery">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-gallery-1.png">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-gallery-1.png">
+            <div class="gallery">
+                <picture class="picture">
                     <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-gallery-1.png" alt="picture"
-                            width="480" height="549">
+                            src="images\gallery-1.jpg" alt="orange tabby cat in brown cardboard box"
+                            width="480" height="549" aria-hidden="true">
                 </picture>
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-gallery-2.png">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-gallery-2.png">
+                <picture class="picture">
                     <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-gallery-2.png" alt="picture"
-                            width="480" height="549">
+                            src="images\gallery-2.jpg" alt="brown and black cat on white textile"
+                            width="480" height="549" aria-hidden="true">
                 </picture>
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-gallery-3.png">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)"
-                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-gallery-3.png">
+                <picture class="picture">
                     <img loading="lazy" decoding="async"
-                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/enterprise-gallery-3.png" alt="picture"
-                            width="480" height="549">
+                            src="images\gallery-3.jpg" alt="a cat sitting on top of a wooden shelf"
+                            width="480" height="549" aria-hidden="true">
                 </picture>
             </div>
         </div>
@@ -140,66 +124,83 @@
     <!--                  Pricing                     -->
     <!-- ============================================ -->
 
-    <section id="pricing-994">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Pricing</span>
-                <h2 class="cs-title">All Hair Services</h2>
+    <section id="pricing">
+        <div class="container">
+            <div class="content">
+                <h2>Our Prices</h2>
                 <!--Menu-->
-                <ul class="cs-menu-group">
-                    <li class="cs-menu-item">
-                        <h3 class="cs-h3">
-                            <span class="cs-header">Haircut With Blow Dry</span>
-                            <span class="cs-price">$39</span>
+                <h3>Boarding Prices</h3>
+                <ul class="menu-group">
+                    <li class="menu-item">
+                        <h3 class="h3">
+                            <span class="service">Suites 5 ~ 9</span>
+                            <span class="price">$26</span>
                         </h3>
-                        <p class="cs-menu-text">
-                            Creative way to paint, decorate, enhance, and embellish.
+                        <p class="menu-text">
+                            Additional $5 for each extra cat
                         </p>
                     </li>
-                    <li class="cs-menu-item">
-                        <h3 class="cs-h3">
-                            <span class="cs-header">Haircut With Blow Dry</span>
-                            <span class="cs-price">$39</span>
+                    <li class="menu-item">
+                        <h3 class="h3">
+                            <span class="service">Suites 1 ~ 4 (larger)</span>
+                            <span class="price">$31</span>
                         </h3>
-                        <p class="cs-menu-text">
-                            Creative way to paint, decorate, enhance, and embellish.
-                        </p>
-                    </li>
-                    <li class="cs-menu-item">
-                        <h3 class="cs-h3">
-                            <span class="cs-header">Haircut With Blow Dry</span>
-                            <span class="cs-price">$39</span>
-                        </h3>
-                        <p class="cs-menu-text">
-                            Creative way to paint, decorate, enhance, and embellish.
-                        </p>
-                    </li>
-                    <li class="cs-menu-item">
-                        <h3 class="cs-h3">
-                            <span class="cs-header">Haircut With Blow Dry</span>
-                            <span class="cs-price">$39</span>
-                        </h3>
-                        <p class="cs-menu-text">
-                            Creative way to paint, decorate, enhance, and embellish.
-                        </p>
-                    </li>
-                    <li class="cs-menu-item">
-                        <h3 class="cs-h3">
-                            <span class="cs-header">Haircut With Blow Dry</span>
-                            <span class="cs-price">$39</span>
-                        </h3>
-                        <p class="cs-menu-text">
-                            Creative way to paint, decorate, enhance, and embellish.
+                        <p class="menu-text">
+                            Additional $5 for each extra cat
                         </p>
                     </li>
                 </ul>
+                <h3>Pick-up & Delivery</h3>
+                <ul class="menu-group">
+                    <li class="menu-item">
+                        <h3 class="h3">
+                            <span class="service">Pick-up & Delivery</span>
+                            <span class="price">$25 per hour</span>
+                        </h3>
+                        <p class="menu-text">
+                            Fees based on entire traveling time
+                        </p>
+                    </li>
+                </ul>
+                <h3>Home Visits</h3>
+                <ul class="menu-group">
+                    <li class="menu-item">
+                        <h3 class="h3">
+                            <span class="service">1 daily visit</span>
+                            <span class="price">$25</span>
+                        </h3>
+                        <p class="menu-text">
+                            Additional $5 for each extra cat
+                        </p>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="h3">
+                            <span class="service">2 daily visits</span>
+                            <span class="price">$40</span>
+                        </h3>
+                        <p class="menu-text">
+                            Additional $7 for each extra cat
+                        </p>
+                    </li>
+                </ul>   
+                <h3>Grooming</h3>
+                <ul class="menu-group">
+                    <li class="menu-item">
+                        <h3 class="h3">
+                            <span class="service">Short haired</span>
+                            <span class="price">$40</span>
+                        </h3>
+                    </li>
+                    <li class="menu-item">
+                        <h3 class="h3">
+                            <span class="service">Long haired</span>
+                            <span class="price">from $50</span>
+                        </h3>
+                    </li>
+                </ul>
             </div>
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/salon3.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/salon3.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/salon3.jpg" alt="hair salon" width="521" height="640">
+            <picture class="picture">
+                <img loading="lazy" decoding="async" src="images/prices.jpg" alt="two cats lying on a couch" width="521" height="640">
             </picture>
         </div>
     </section>
@@ -208,66 +209,65 @@
     <!--                   Contact                    -->
     <!-- ============================================ -->
 
-    <section id="contact-1388">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Contact Us</span>
-                <h2 class="cs-title">Get in Touch</h2>
-                <p class="cs-text">
-                    We are a team of passionate and creative individuals dedicated to crafting captivating designs that leave a lasting impression.
+    <section id="contact">
+        <div class="container">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>
+                    You are welcome to call us to arrange an inspection, or to discuss the details of your Cat’s stay with us.
                 </p>
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        <picture class="cs-icon-wrapper">
-                            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
+                <ul class="ul">
+                    <li class="li">
+                        <picture class="icon-wrapper">
+                            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-76.svg" alt="phone icon" class="icon" width="40" height="40" decoding="async">
                         </picture>
-                        <div class="cs-flex-group">
-                            <span class="cs-header">Phone</span>
-                            <a href="tel:888-4565-789
-                            " class="cs-link">+1 (888) 4565 789
-                            </a>
+                        <div class="flex-group">
+                            <span class="service">Phone</span>
+                            <a href="tel:02-9632-8658" class="link">T: (02) 9632 8658</a>
+                            <a href="tel:0414-632-865" class="link">M: 0414 632 865</a>
                         </div>
                     </li>
-                    <li class="cs-li">
-                        <picture class="cs-icon-wrapper">
-                            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                    <li class="li">
+                        <picture class="icon-wrapper">
+                            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/mail-76.svg" alt="address icon" class="icon" width="40" height="40" decoding="async">
                         </picture>
-                        <div class="cs-flex-group">
-                            <span class="cs-header">Email</span>
-                            <a href="mailto:Email@stitch.com" class="cs-link">Email@stitch.com</a>
+                        <div class="flex-group">
+                            <span class="service">Email</span>
+                            <a href="mailto:catspell2010@gmail.com" class="link">catspell2010@gmail.com</a>
+                            <br>
                         </div>
                     </li>
-                    <li class="cs-li">
-                        <picture class="cs-icon-wrapper">
-                            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
+                    <li class="li">
+                        <picture class="icon-wrapper">
+                            <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/pin-76.svg" alt="address icon" class="icon" width="40" height="40" decoding="async">
                         </picture>
-                        <div class="cs-flex-group">
-                            <span class="cs-header">Address</span>
-                            <a href="" class="cs-link">2553 Woodbridge Lane, Boston Ware 120</a>
+                        <div class="flex-group">
+                            <span class="service">Address</span>
+                            <a href="https://www.google.com/maps?q=11+Vulcan+Street,+Guildford+NSW+2161" class="link" aria-label="address" target="_blank" rel="noopener">11 Vulcan Street, <br>Guildford NSW 2161</a>
+                            <br>
                         </div>
                     </li>
                 </ul>
             </div>
             <!--Form-->
-            <form class="cs-form" id="cs-form-1388" name="Contact Form" method="post">
-                <h3 class="cs-h3">Make Appointment</h3>
-                <label class="cs-label">
-                    Name
-                    <input class="cs-input" required type="text" id="name-1388" name="name" placeholder="Name">
+            <form class="form" id="form" name="Contact Form" method="post">
+                <label class="label">
+                    Name *
+                    <input class="input" required type="text" id="name" name="name" placeholder="Name">
                 </label>
-                <label class="cs-label cs-email">
-                    Email
-                    <input class="cs-input" required type="email" id="email-1388" name="email" placeholder="Email">
+                <label class="label email">
+                    Email *
+                    <input class="input" required type="email" id="email" name="email" placeholder="Email">
                 </label>
-                <label class="cs-label cs-phone">
-                    Phone
-                    <input class="cs-input" required type="number" id="phone-1388" name="phone" placeholder="Phone">
+                <label class="label phone">
+                    Subject
+                    <input class="input" type="text" id="phone" name="subject" placeholder="Subject">
                 </label>
-                <label class="cs-label">
-                    Message
-                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1388" placeholder="Write message..."></textarea>
+                <label class="label">
+                    Message *
+                    <textarea class="input textarea" required name="Message" id="message" placeholder="Write message..."></textarea>
                 </label>
-                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+                <button class="button-solid submit" type="submit">Send Message</button>
             </form>
         </div>
     </section>
@@ -276,66 +276,45 @@
     <!--                  Footer                      -->
     <!-- ============================================ -->
 
-    <footer id="footer-1390">
-        <div class="cs-container">
-            <div class="cs-top">
-                <a aria-label="go back to home" class="cs-logo" href="">
-                    <img class="cs-logo-img" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Logos/agency-logo.svg" alt="logo" width="209" height="40">
+    <footer id="footer">
+        <div class="container">
+            <div class="top">
+                <a aria-label="go back to home" class="logo" href="">
+                    <img class="logo-img" loading="lazy" decoding="async" src="images/logo.png" alt="logo" width="209" height="40">
                 </a>
-                <ul class="cs-ul">
-                    <li class="cs-li">
-                        <a href="" class="cs-link">Home</a>
+                <ul class="ul">
+                    <li class="li">
+                        <a href="#hero" class="link">Home</a>
                     </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-link">About</a>
+                    <li class="li">
+                        <a href="#pricing" class="link">Our Prices</a>
                     </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-link">Services</a>
+                    <li class="li">
+                        <a href="" class="link">Your Checklist</a>
                     </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-link">Blog</a>
+                    <li class="li">
+                        <a href="" class="link">Facts on Cats</a>
                     </li>
-                    <li class="cs-li">
-                        <a href="" class="cs-link">Contact</a>
+                    <li class="li">
+                        <a href="" class="link">The Cat Tails</a>
+                    </li>
+                    <li class="li">
+                        <a href="#contact" class="link">Contact Us</a>
                     </li>
                 </ul>
             </div>
-            <div class="cs-bottom">
-                <!--Social-->
-                <ul class="cs-social">
-                    <li class="cs-social-li">
-                        <a href="" class="cs-social-link" aria-label="facebook" target="_blank" rel="noopener">
-                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                        </a>
-                    </li>
-                    <li class="cs-social-li">
-                        <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/twitter-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                        </a>
-                    </li>
-                    <li class="cs-social-li">
-                        <a href="" class="cs-social-link" aria-label="instagram" target="_blank" rel="noopener">
-                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/instagram-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                        </a>
-                    </li>
-                    <li class="cs-social-li">
-                        <a href="" class="cs-social-link" aria-label="twitter" target="_blank" rel="noopener">
-                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/youtube-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
-                        </a>
-                    </li>
-                </ul>
-                <span class="cs-copyright">
-                    © Copyright 2023 - <a href="" class="cs-copyright-link">Stitch Agency</a>
-                </span>
-                <div class="cs-flex">
-                    <a href="" class="cs-copyright-link">Privacy Policy</a>
-                    <span class="cs-separater">|</span>
-                    <a href="" class="cs-copyright-link">Terms of Use</a>
-                </div>
+            <div class="bottom">
+                <p class="copyright">
+                    © Copyright 2024 - <a href="" class="copyright-link">Catspell Cat Resort</a>
+                </p>
+                <a href="https://www.facebook.com/CatspellCatResort/" class="social-link" aria-label="facebook" target="_blank" rel="noopener">
+                    <img class="social-icon default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/facebook-ba.svg" alt="icon" loading="lazy" decoding="async" width="12" height="12" aria-hidden="true">
+                </a>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </body>
 </html>
